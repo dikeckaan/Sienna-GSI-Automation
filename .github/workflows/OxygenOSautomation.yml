@@ -18,7 +18,7 @@ env:
   ROM_NAME: OxygenOS
   ZIP_NAME: OOS6T
   TZ: Asia/Kolkata
-  MIR: tmp
+  MIR: gof
 jobs:
   build:
     runs-on: ubuntu-latest
