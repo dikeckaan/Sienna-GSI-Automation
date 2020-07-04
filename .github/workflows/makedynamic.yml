@@ -33,6 +33,7 @@ jobs:
            sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
            sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php*
            sudo -E apt-get update
+           sudo -E apt-get install wget
            sudo -E apt-get -y autoremove --purge
            sudo -E apt-get clean 
            
@@ -49,12 +50,12 @@ jobs:
          run: |
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
-              curl -sL https://gist.githubusercontent.com/dikeckaan/6ffe404cc0f6bfa116f200d234c6fe6b/raw/c4061670881b22607210ed8deddb1660e602cc2b/makedynamic.sh
+              wget https://gist.githubusercontent.com/dikeckaan/6ffe404cc0f6bfa116f200d234c6fe6b/raw/c4061670881b22607210ed8deddb1660e602cc2b/makedynamic.sh
               sudo bash setup.sh
        
        - name: Download Stock Rom & Generate GSI
          run: |
-              curl -sLo firmware.zip $ROM_URL
+              wget -O firmware.zip $ROM_URL
               sudo ./makedynamic.sh $ROM_NAME firmware.zip
               sudo ./make.sh system/ $ROM_NAME Aonly output/
               sudo ./make.sh system/ $ROM_NAME AB output/
