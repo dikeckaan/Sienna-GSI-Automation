@@ -54,7 +54,7 @@ jobs:
        
        - name: Download Stock Rom & Generate GSI
          run: |
-              curl -sLO firmware.zip $ROM_URL
+              wget -O firmware.zip $ROM_URL
               curl -sLO https://gist.githubusercontent.com/dikeckaan/6ffe404cc0f6bfa116f200d234c6fe6b/raw/c4061670881b22607210ed8deddb1660e602cc2b/makedynamic.sh
               sudo ./makedynamic.sh $ROM_NAME firmware.zip
               sudo ./make.sh system/ $ROM_NAME Aonly output/
