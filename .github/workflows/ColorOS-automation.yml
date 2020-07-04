@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH1707/CPH1707EX_11_OTA_0270_all_x9RcPTBh2ChL.ozip
+  ROM_URL: http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH1879Q/CPH1879EX_11_OTA_3050_all_1gZqEWNlnJYj.ozip
   ROM_NAME: ColorOS
-  ZIP_NAME: OppoR11
+  ZIP_NAME: OppoR17
   TZ: Asia/Kolkata
   MIR: gof
 jobs:
