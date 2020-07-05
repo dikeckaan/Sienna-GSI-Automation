@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://qc3.androidfilehost.com/dl/awY9Vsy4ha0mDkdhycPxxQ/1594059721/8889791610682871784/xiaomi.eu_multi_HMK20MI9T_V12.0.2.0.QFJCNXM_v12-10.zip
+  ROM_URL: https://mirrors.xtom.com/osdn//storage/g/x/xi/xiaomifirmwareupdater/Developer/20.6.18/whyred/fw_whyred_miui_HMNote5_20.6.18_887af1fbe4_9.0.zip
   ROM_NAME: MIUI
-  ZIP_NAME: MIUI129TEU
+  ZIP_NAME: MIUI12WHYRED
   TZ: Asia/Kolkata
   MIR: gof
 jobs:
