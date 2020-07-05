@@ -1,6 +1,6 @@
 name: MIUI GSI..
 
-on:
+off:
 #  release:
 #    types: [published]
 #  push:
