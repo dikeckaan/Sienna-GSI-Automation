@@ -1,6 +1,7 @@
+#yamllint disable
 name: GSI With product Partition..
 
-off:
+on:
 #  release:
 #    types: [published]
 #  push:
@@ -79,3 +80,4 @@ jobs:
               cat ErfanGSIs/output/*-AB-*.txt
          
             
+#yamllint enable
