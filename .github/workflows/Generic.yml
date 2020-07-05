@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://dl.google.com/dl/android/aosp/coral-ota-qd1a.190821.007-a80cd76e.zip
+  ROM_URL: https://dl.google.com/developers/android/rvc/images/factory/blueline-rpb1.200504.020-factory-04b2d10b.zip
   ROM_NAME: Generic
   ZIP_NAME: Pixel4XL
   TZ: Asia/Kolkata
