@@ -1,6 +1,6 @@
 name: GSI With product Partition..
 
-on:
+off:
 #  release:
 #    types: [published]
 #  push:
