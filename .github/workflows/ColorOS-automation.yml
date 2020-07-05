@@ -1,6 +1,6 @@
 name: ColorOS GSI..
 
-on:
+off:
 #  release:
 #    types: [published]
 #  push:
