@@ -54,13 +54,11 @@ jobs:
        - name: Download Stock Rom & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME --ab
        
-       - name: Zip Aonly and upload 
+       - name: upload tool downloading
          run: |
-              mkdir final
-        #      sudo chmod -R 777 ErfanGSIs/output
-        #      zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
+               mkdir final
+               sudo chmod -R 777 ErfanGSIs/output
                curl -sL https://git.io/file-transfer | sh
-         #    ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z          
        - name: Zip AB and upload 
          run: |
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
