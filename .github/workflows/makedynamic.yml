@@ -59,23 +59,23 @@ jobs:
               chmod +x makedynamic.sh
               sudo ./makedynamic.sh $ROM_NAME firmware.zip
               sudo rm -rf firmware.zip
-              chmod +x make.sh
-              sudo ./make.sh system/ $ROM_NAME Aonly output/
-              sudo ./make.sh system/ $ROM_NAME AB output/
-       
+              chmod +x make.sh       
        - name: Zip Aonly and upload 
          run: |
+              sudo ./make.sh system/ $ROM_NAME Aonly output/
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
               curl -sL https://git.io/file-transfer | sh
-              ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z          
+              ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z
+              sudo rm -rf output/*          
        - name: Zip AB and upload 
          run: |
+              sudo ./make.sh system/ $ROM_NAME AB output/
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
        - name: Print build info
          run: |
-              cat ErfanGSIs/output/*-Aonly-*.txt
+              cat ErfanGSIs/output/*-AB-*.txt
          
             
