@@ -1,6 +1,6 @@
 name: OxygenOS GSI..
 
-off:
+on:
 #  release:
 #    types: [published]
 #  push:
@@ -14,11 +14,11 @@ off:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus6Oxygen_22_OTA_045_all_2004142201_bdd6fdc6b6b1477f.zip
+  ROM_URL: https://oxygenos.oneplus.net/OnePlus5Oxygen_23_OTA_054_all_2002242016_1fd6cbd4606e44cf.zip
   ROM_NAME: OxygenOS
-  ZIP_NAME: OOS6T
+  ZIP_NAME: OOS5
   TZ: Asia/Kolkata
-  MIR: gof
+  MIR: wet
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -52,21 +52,19 @@ jobs:
               sudo bash setup.sh
        
        - name: Download Stock Rom & Generate GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
+         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME --ab
        
-       - name: Zip Aonly and upload 
+       - name: Downloading upload script
          run: |
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
-              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z          
+              curl -sL https://git.io/file-transfer | sh          
        - name: Zip AB and upload 
          run: |
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
        - name: Print build info
          run: |
-              cat ErfanGSIs/output/*-Aonly-*.txt
+              cat ErfanGSIs/output/*-AB-*.txt
          
             
