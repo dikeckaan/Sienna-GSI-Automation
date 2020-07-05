@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://mirrors.xtom.com/osdn//storage/g/x/xi/xiaomifirmwareupdater/Developer/20.6.18/whyred/fw_whyred_miui_HMNote5_20.6.18_887af1fbe4_9.0.zip
+  ROM_URL: https://qc3.androidfilehost.com/dl/jeWuaHRq0P_DG8Rrtrdu1Q/1594065813/8889791610682873489/xiaomi.eu_multi_HMNote5Pro_20.6.18_v12-9.zip
   ROM_NAME: MIUI
   ZIP_NAME: MIUI12WHYRED
   TZ: Asia/Kolkata
