@@ -14,9 +14,9 @@ off:
     types: [started]
     
 env:
-  ROM_URL: http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH1879Q/CPH1879EX_11_OTA_3050_all_1gZqEWNlnJYj.ozip
+  ROM_URL: https://download.c.realme.com/osupdate/RMX1971EX_11_OTA_1040_all_XObW6afyijrq.ozip
   ROM_NAME: ColorOS
-  ZIP_NAME: OppoR17
+  ZIP_NAME: Realme5Pro
   TZ: Asia/Kolkata
   MIR: gof
 jobs:
@@ -43,7 +43,7 @@ jobs:
 
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs
        
        - name: Setting up ErfanGSI requirements
          run: |
