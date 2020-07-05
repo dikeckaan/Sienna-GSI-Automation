@@ -18,7 +18,7 @@ env:
   ROM_NAME: MIUI
   ZIP_NAME: MIUI12WHYRED
   TZ: Asia/Kolkata
-  MIR: trs
+  MIR: wet
 jobs:
   build:
     runs-on: ubuntu-latest
