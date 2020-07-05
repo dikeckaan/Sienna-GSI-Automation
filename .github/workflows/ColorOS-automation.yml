@@ -18,7 +18,7 @@ env:
   ROM_NAME: ColorOS
   ZIP_NAME: Realme5Pro
   TZ: Asia/Kolkata
-  MIR: gof
+  MIR: wet
 jobs:
   build:
     runs-on: ubuntu-latest
