@@ -16,7 +16,7 @@ on:
 env:
   ROM_URL: https://dl.google.com/developers/android/rvc/images/factory/blueline-rpb1.200504.020-factory-04b2d10b.zip
   ROM_NAME: Generic
-  ZIP_NAME: Pixel4XL
+  ZIP_NAME: Pixel3-11-
   TZ: Asia/Kolkata
   MIR: wet
 jobs:
