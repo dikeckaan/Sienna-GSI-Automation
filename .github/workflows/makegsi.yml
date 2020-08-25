@@ -1,4 +1,4 @@
-name: OxygenOS GSI..
+name: MIUI GSI..
 
 off:
 #  release:
@@ -14,9 +14,9 @@ off:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus5Oxygen_23_OTA_054_all_2002242016_1fd6cbd4606e44cf.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OOS5
+  ROM_URL: http://dl-res.flymeos.com/Firmware/Flyme/16xs/7.3.1.0/intl/20190727193914/748b6cff/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: MEIZU16XS
   TZ: Asia/Kolkata
   MIR: wet
 jobs:
@@ -54,11 +54,11 @@ jobs:
        - name: Download Stock Rom & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME --ab
        
-       - name: Downloading upload script
+       - name: upload tool downloading
          run: |
-              mkdir final
-              sudo chmod -R 777 ErfanGSIs/output
-              curl -sL https://git.io/file-transfer | sh          
+               mkdir final
+               sudo chmod -R 777 ErfanGSIs/output
+               curl -sL https://git.io/file-transfer | sh
        - name: Zip AB and upload 
          run: |
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
