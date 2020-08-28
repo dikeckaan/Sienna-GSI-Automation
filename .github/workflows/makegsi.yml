@@ -1,3 +1,5 @@
+yamllint disable
+
 name: GSI..
 
 on:
@@ -68,3 +70,4 @@ jobs:
               cat ErfanGSIs/output/*-AB-*.txt
          
             
+yamllint enable
