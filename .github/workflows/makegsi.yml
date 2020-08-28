@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16xs/8.20.8.24/cn_daily/20200824093724/007eda68/update.zip
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/note9/8.20.8.26/cn_daily/20200826100328/7fbe725a/update.zip
   ROM_NAME: Flyme
-  ZIP_NAME: MEIZU16XS
+  ZIP_NAME: MEIZUNOTE9
   TZ: Asia/Kolkata
   MIR: wet
 jobs:
