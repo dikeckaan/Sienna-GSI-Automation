@@ -1,7 +1,7 @@
 #yamllint disable
 name: GSI With product Partition..
 
-off:
+on:
 #  release:
 #    types: [published]
 #  push:
@@ -15,11 +15,11 @@ off:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus8ProOxygen_15.O.19_OTA_019_all_2005301411_63c531a1a94a4fc1.zip
+  ROM_URL: https://oxygenos.oneplus.net/OnePlus8ProOxygen_15.O.22_OTA_022_all_2008080055_6e4f8eb44c10429a.zip
   ROM_NAME: OxygenOS
   ZIP_NAME: Oneplus8PRO
   TZ: Asia/Kolkata
-  MIR: flk
+  MIR: wet
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -58,7 +58,7 @@ jobs:
               wget -Oq firmware.zip $ROM_URL
               wget -Oq makedynamic.sh https://gist.githubusercontent.com/shivvvvvv/6ff35518eca03b86d2ec92a33c8407ba/raw/34f133159c319f4f25785eef2a65ac4fea757d91/makedynamic.sh
               chmod +x makedynamic.sh
-              sudo ./makedynamic.sh $ROM_NAME firmware.zip
+              sudo ./makedynamic.sh $ROM_NAME firmware.zip > checkme.txt
               sudo rm -rf firmware.zip
               chmod +x make.sh       
        - name: Zip Aonly and upload 
@@ -66,17 +66,13 @@ jobs:
               sudo ./make.sh system/ $ROM_NAME Aonly output/
               mkdir final
               sudo chmod -R 777 ErfanGSIs/output
-              zip -r ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z ErfanGSIs/output/*-Aonly-*.img
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-Aonly.7z
-              sudo rm -rf output/*          
-       - name: Zip AB and upload 
-         run: |
-              sudo ./make.sh system/ $ROM_NAME AB output/
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
-              ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z      
+              curl -sL https://git.io/file-transfer | sh
+              ./transfer $MIR ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z          
+       
        - name: Print build info
          run: |
+              ./transfer $MIR ErfanGSIs/checkme.txt
               cat ErfanGSIs/output/*-AB-*.txt
          
             
