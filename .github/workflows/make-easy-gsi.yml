@@ -37,7 +37,17 @@ jobs:
             wget https://raw.githubusercontent.com/dikeckaan/Sienna-GSI-Automation/master/easygsi.sh
             chmod +x easygsi.sh
             sudo bash easygsi.sh
-                  
+   
+       - name: Upload Aonly
+         run: |
+            wget https://raw.githubusercontent.com/dikeckaan/Sienna-GSI-Automation/master/uploadAonly.sh
+            chmod +x uploadAonly.sh
+            bash uploadAonly.sh
+       - name: Upload AB
+         run: |
+            wget https://raw.githubusercontent.com/dikeckaan/Sienna-GSI-Automation/master/uploadAB.sh
+            chmod +x uploadAB.sh
+            bash uploadAB.sh     
        - name: Print build info
          run: |
               cat ErfanGSIs/output/*-Aonly-*.txt
