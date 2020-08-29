@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://master.dl.sourceforge.net/project/testbuildss/daisy/ion-2.9.a-EOL-daisy-20200823-1246-UNOFFICIAL-Preview.zip
-  ROM_NAME: Generic
-  ZIP_NAME: IonOS
+  ROM_URL: https://bigota.d.miui.com/V12.0.3.0.QFJMIXM/miui_DAVINCIGlobal_V12.0.3.0.QFJMIXM_ed720ed0a6_10.0.zip
+  ROM_NAME: MIUI
+  ZIP_NAME: davinci-latest-global-stable
   TZ: Asia/Kolkata
   MIR: wet
 jobs:
