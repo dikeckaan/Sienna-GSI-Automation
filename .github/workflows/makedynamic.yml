@@ -59,12 +59,12 @@ jobs:
               cd romishere
               wget $ROM_URL
               cd ..
-              wget -O --no-verbose makedynamic.sh https://gist.githubusercontent.com/shivvvvvv/6ff35518eca03b86d2ec92a33c8407ba/raw/34f133159c319f4f25785eef2a65ac4fea757d91/makedynamic.sh
+              wget https://gist.githubusercontent.com/shivvvvvv/6ff35518eca03b86d2ec92a33c8407ba/raw/34f133159c319f4f25785eef2a65ac4fea757d91/makedynamic.sh
               chmod +x makedynamic.sh
               sudo ./makedynamic.sh $ROM_NAME romishere/* > checkme.txt
               sudo rm -rf firmware.zip
               chmod +x make.sh       
-       - name: Zip Aonly and upload 
+       - name: Zip AB and upload 
          run: |
               sudo ./make.sh system/ $ROM_NAME Aonly output/
               mkdir final
