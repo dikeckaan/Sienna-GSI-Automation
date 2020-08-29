@@ -1,6 +1,6 @@
 romurl='https://bigota.d.miui.com/V12.0.3.0.QFJMIXM/miui_DAVINCIGlobal_V12.0.3.0.QFJMIXM_ed720ed0a6_10.0.zip'
 rombase='MIUI'
-zipname=''
+devicecodename='davinci'
 page='index.html'
 uploadto='wet'
 toolkit='https://github.com/erfanoabdi/ErfanGSIs'
@@ -24,7 +24,7 @@ cd output
 zip -r $ZIP_NAME-GSI-Aonly.7z *-Aonly-*.img
 curl -sL https://git.io/file-transfer | sh
 clear
-./transfer $MIR $ZIP_NAME-GSI-Aonly.7z
+./transfer $uploadto $devicecodename-GSI-Aonly.7z
 
 echo "Zip AB and upload"
 zip -r $ZIP_NAME-GSI-AB.7z *-AB-*.img
