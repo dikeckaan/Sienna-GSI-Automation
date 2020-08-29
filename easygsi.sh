@@ -1,7 +1,6 @@
 romurl='https://bigota.d.miui.com/V12.0.3.0.QFJMIXM/miui_DAVINCIGlobal_V12.0.3.0.QFJMIXM_ed720ed0a6_10.0.zip'
 rombase='MIUI'
 devicecodename='davinci'
-page='index.html'
 uploadto='wet'
 toolkit='https://github.com/erfanoabdi/ErfanGSIs'
 
