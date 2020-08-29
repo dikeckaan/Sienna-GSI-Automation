@@ -44,7 +44,7 @@ jobs:
             sudo -E apt-get -qq install git openjdk-8-jdk wget
 
        
-       - name: Clone ErfanGSI Source Code and dynamic makedynamic script
+       - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
        
        - name: Setting up ErfanGSI requirements
@@ -58,11 +58,10 @@ jobs:
               mkdir romishere
               cd romishere
               wget $ROM_URL
-              cd ..
-              wget https://gist.githubusercontent.com/shivvvvvv/6ff35518eca03b86d2ec92a33c8407ba/raw/34f133159c319f4f25785eef2a65ac4fea757d91/makedynamic.sh
-              chmod +x makedynamic.sh
-              sudo ./makedynamic.sh $ROM_NAME romishere/* > checkme.txt
-              sudo rm -rf firmware.zip
+              cd ~/ErfanGSIs
+              wget https://raw.githubusercontent.com/dikeckaan/Sienna-GSI-Automation/master/merge.sh
+              chmod +x merge.sh
+              sudo ./merge.sh $ROM_NAME romishere/* > checkme.txt
               chmod +x make.sh       
        - name: Zip AB and upload 
          run: |
