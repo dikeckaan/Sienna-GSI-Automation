@@ -1,4 +1,4 @@
-yamllint disable
+#yamllint disable
 
 name: GSI..
 
@@ -72,4 +72,4 @@ jobs:
               cat ErfanGSIs/output/*-AB-*.txt
          
             
-yamllint enable
+#yamllint enable
