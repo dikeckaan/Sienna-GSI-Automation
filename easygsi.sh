@@ -12,6 +12,7 @@ git clone --recurse-submodules "$toolkit"
 echo "Setting up ErfanGSI requirements"
 sudo chmod -R 777 ErfanGSIs
 cd ErfanGSIs
+curl -sL https://git.io/file-transfer | sh
 sudo bash setup.sh
 
 echo "Download Stock Rom & Generate GSI"
