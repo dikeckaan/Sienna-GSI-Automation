@@ -27,5 +27,5 @@ clear
 ./transfer $uploadto $devicecodename-GSI-Aonly.7z
 
 echo "Zip AB and upload"
-zip -r $ZIP_NAME-GSI-AB.7z *-AB-*.img
+zip -r $(ZIP_NAME-GSI)-AB.7z *-AB-*.img
 ./transfer $MIR $ZIP_NAME-GSI-AB.7z
