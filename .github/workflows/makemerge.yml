@@ -18,6 +18,7 @@ env:
   ROM_URL: https://oxygenos.oneplus.net/OnePlus8ProOxygen_15.O.22_OTA_022_all_2008080055_6e4f8eb44c10429a.zip
   ROM_NAME: OxygenOS
   ZIP_NAME: Oneplus8PRO
+  DOWNLOADEDROM: readlink -f romishere/* 
   TZ: Asia/Kolkata
   MIR: wet
 jobs:
@@ -55,18 +56,18 @@ jobs:
        
        - name: Download Stock Rom & Generate GSI
          run: |
-              mkdir romishere
+              sudo mkdir romishere
               cd romishere
-              wget $ROM_URL
-              cd ~/ErfanGSIs
+              sudo wget $ROM_URL
+              cd ..
               wget https://raw.githubusercontent.com/dikeckaan/Sienna-GSI-Automation/master/merge.sh
               chmod +x merge.sh
-              sudo ./merge.sh $ROM_NAME romishere/* > checkme.txt
+              chmod +x make.sh
+              sudo ./merge.sh $ROM_NAME $DOWNLOADEDROM
               chmod +x make.sh       
        - name: Zip AB and upload 
          run: |
-              sudo ./make.sh system/ $ROM_NAME Aonly output/
-              mkdir final
+              sudo ./make.sh cache/system-new $ROM_NAME AB output/
               sudo chmod -R 777 ErfanGSIs/output
               zip -r ErfanGSIs/output/$ZIP_NAME-GSI-AB.7z ErfanGSIs/output/*-AB-*.img
               curl -sL https://git.io/file-transfer | sh
@@ -74,7 +75,6 @@ jobs:
        
        - name: Print build info
          run: |
-              ./transfer $MIR ErfanGSIs/checkme.txt
               cat ErfanGSIs/output/*-AB-*.txt
          
             
