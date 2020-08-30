@@ -23,9 +23,3 @@ sudo chmod -R 777 output
 cd output
 zip -r $ZIP_NAME-GSI-Aonly.7z *-Aonly-*.img
 curl -sL https://git.io/file-transfer | sh
-clear
-./transfer $uploadto $devicecodename-GSI-Aonly.7z
-
-echo "Zip AB and upload"
-zip -r $(ZIP_NAME-GSI)-AB.7z *-AB-*.img
-./transfer $MIR $ZIP_NAME-GSI-AB.7z
