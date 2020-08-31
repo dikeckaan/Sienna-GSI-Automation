@@ -14,10 +14,14 @@ sudo chmod -R 777 ErfanGSIs
 cd ErfanGSIs
 curl -sL https://git.io/file-transfer | sh
 sudo bash setup.sh
-wget 
 
 echo "Download Stock Rom & Generate GSI"
-sudo wget -c $romurl -O firmware.zip
+mkdir romishere
+cd romishere
+sudo wget $romurl
+mv * firmware.zip
+cd ..
+mv romishere/firmware.zip firmware.zip
 wget https://raw.githubusercontent.com/dikeckaan/Sienna-GSI-Automation/master/merge.sh
 chmod +x merge.sh
 chmod +x make.sh
