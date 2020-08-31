@@ -1,5 +1,5 @@
-romurl='https://bigota.d.miui.com/V12.0.3.0.QFJMIXM/miui_DAVINCIGlobal_V12.0.3.0.QFJMIXM_ed720ed0a6_10.0.zip'
-rombase='MIUI'
+romurl='https://mva1.androidfilehost.com/dl/Tc69JV1sj7QCFPejxqRt4A/1598949800/8889791610682894384/xiaomi.eu_multi_HMK20ProMI9TPro_V12.0.3.0.QFKCNXM_v12-10.zip'
+rombase='XIAOMI-EU'
 devicecodename='davinci'
 uploadto='wet'
 toolkit='https://github.com/erfanoabdi/ErfanGSIs'
