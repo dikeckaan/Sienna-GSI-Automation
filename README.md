@@ -1,5 +1,5 @@
-#THIS REPO BASED FROM https://github.com/Area69Lab/GSI-Automation
-
+THIS REPO BASED FROM https://github.com/Area69Lab/GSI-Automation
+(Special thanks for @JamieHoSzeYui , ne give me idea and help me all thinks)
 # GSI-Automation
 
 
