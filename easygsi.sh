@@ -5,8 +5,8 @@ uploadto='wet'
 toolkit='https://github.com/erfanoabdi/ErfanGSIs'
 
 echo "Initializing environment"
-sudo -E apt-get -qq update
-sudo -E apt-get -qq install -y git openjdk-8-jdk wget
+sudo apt-getupdate
+sudo apt-get install -y git openjdk-8-jdk wget
 git clone --recurse-submodules "$toolkit" 
 
 echo "Setting up ErfanGSI requirements"
