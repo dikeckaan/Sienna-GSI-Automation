@@ -1,4 +1,4 @@
-romurl='https://mva1.androidfilehost.com/dl/Tc69JV1sj7QCFPejxqRt4A/1598949800/8889791610682894384/xiaomi.eu_multi_HMK20ProMI9TPro_V12.0.3.0.QFKCNXM_v12-10.zip'
+romurl='https://bigota.d.miui.com/20.8.27/miui_TUCANA_20.8.27_6540fa47cf_10.0.zip'
 rombase='XIAOMI-EU'
 devicecodename='davinci'
 uploadto='wet'
