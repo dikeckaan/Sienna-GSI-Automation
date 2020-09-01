@@ -1,5 +1,5 @@
 romurl='https://bigota.d.miui.com/20.8.27/miui_TUCANA_20.8.27_6540fa47cf_10.0.zip'
-rombase='XIAOMI-EU'
+rombase='MIUI'
 devicecodename='davinci'
 uploadto='wet'
 toolkit='https://github.com/erfanoabdi/ErfanGSIs'
