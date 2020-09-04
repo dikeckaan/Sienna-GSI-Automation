@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus7TOxygen_14.O.18_OTA_018_all_2007240040_77d64cd32274479a.zip
+  ROM_URL: https://oxygenos.oneplus.net/OnePlus6TOxygen_34_OTA_047_all_2007171912_3ac1d37aee4841a9.zip
   ROM_NAME: OxygenOS
-  ZIP_NAME: OnePlus7
+  ZIP_NAME: OnePlus6T
   TZ: Asia/Kolkata
   MIR: wet
 jobs:
