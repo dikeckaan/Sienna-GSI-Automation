@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://mde1.androidfilehost.com/dl/Q6V4S7z0dCQ5ob8GwL55aA/1599732896/8889791610682933214/MIUIPLUS.Lavender.20.9.5.A10.M12.zip?
+  ROM_URL: https://bigota.d.miui.com/20.9.3/miui_LAVENDER_20.9.3_c55b414260_10.0.zip
   ROM_NAME: MIUI
   ZIP_NAME: MIUIPLUS
   TZ: Asia/Kolkata
