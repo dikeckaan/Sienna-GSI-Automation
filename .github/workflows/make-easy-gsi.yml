@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus6TOxygen_34_OTA_047_all_2007171912_3ac1d37aee4841a9.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OnePlus6T
+  ROM_URL: https://mde1.androidfilehost.com/dl/Q6V4S7z0dCQ5ob8GwL55aA/1599732896/8889791610682933214/MIUIPLUS.Lavender.20.9.5.A10.M12.zip?
+  ROM_NAME: MIUI
+  ZIP_NAME: MIUIPLUS
   TZ: Asia/Kolkata
   MIR: wet
 jobs:
