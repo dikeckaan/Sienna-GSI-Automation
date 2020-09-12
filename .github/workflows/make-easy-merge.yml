@@ -1,3 +1,5 @@
+# yamllint disable-file
+
 name: Easy Merge..
 
 on:
