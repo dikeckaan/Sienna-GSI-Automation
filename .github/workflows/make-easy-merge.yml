@@ -1,5 +1,5 @@
 # yamllint disable-file
-
+# The following mapping contains the same key twice, but I know what I'm doing:
 name: Easy Merge..
 
 on:
