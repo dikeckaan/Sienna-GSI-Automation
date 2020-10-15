@@ -63,7 +63,7 @@ jobs:
               sudo chmod -R 777 ErfanGSIs/output
               cd ErfanGSIs/output
               zip -r $ZIP_NAME-GSI-Aonly.7z *-Aonly-*.img
-              curl -T $ZIP_NAME-GSI-Aonly.7z ftp://$username:$password@$uploadto/          
+              curl -T $ZIP_NAME-GSI-Aonly.7z $uploadtype://$username:$password@$uploadto/          
        - name: Zip AB and upload 
          run: |
               cd ErfanGSIs/output
