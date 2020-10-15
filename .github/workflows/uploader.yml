@@ -22,7 +22,7 @@ env:
   username : ${{ secrets.UPLOADUSERNAME }}
   password : ${{ secrets.UPLOADPASSWORD }}
   uploadto : uploads.androidfilehost.com
-  uploadtype: sftp
+  uploadtype: ftp
 jobs:
   build:
     runs-on: ubuntu-latest
