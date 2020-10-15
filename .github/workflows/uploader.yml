@@ -17,7 +17,7 @@ env:
   ROM_URL: https://bigota.d.miui.com/V12.0.2.0.QCOCNXM/miui_GINKGO_V12.0.2.0.QCOCNXM_fad5afbf68_10.0.zip   
   ROM_NAME: MIUI
   ZIP_NAME: test-upload
-  erfanrepo: https://github.com/Area69Lab/ErfanGSIs.git 
+  erfanrepo: https://github.com/erfanoabdi/ErfanGSIs.git 
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
   password : ${{ secrets.UPLOADPASSWORD }}
