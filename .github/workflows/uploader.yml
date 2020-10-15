@@ -17,7 +17,7 @@ env:
   ROM_URL: https://bigota.d.miui.com/V12.0.2.0.QEJMIXM/miui_POCOF1Global_V12.0.2.0.QEJMIXM_ce099a7067_10.0.zip   
   ROM_NAME: MIUI
   ZIP_NAME: test-upload
-  erfanrepo: https://github.com/erfanoabdi/ErfanGSIs.git 
+  erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git && mv ErfanGSIs-VelanGSIs ErfanGSIs  
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
   password : ${{ secrets.UPLOADPASSWORD }}
