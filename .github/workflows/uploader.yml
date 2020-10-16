@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.c.realme.com/osupdate/RMX1993EX_11_OTA_1080_all_Gr2IwxeFFRaQ.ozip
-  ROM_NAME: ColorOS
-  ZIP_NAME: RealmeUI-V1.0
+  ROM_URL: https://samfrew.com/d/my39/
+  ROM_NAME: OneUI
+  ZIP_NAME: OneUI-2.5
   erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
