@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://samfrew.com/d/my39/
-  ROM_NAME: OneUI
-  ZIP_NAME: OneUI-2.5
+  ROM_URL: https://firmware.meizu.com/Firmware/Flyme/15/8.0.5.0/cn/20200907103451/75dc7714/update.zip
+  ROM_NAME: Flyme
+  ZIP_NAME: Flyme8
   erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
