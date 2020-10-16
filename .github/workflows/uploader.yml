@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/V12.0.2.0.QEJMIXM/miui_POCOF1Global_V12.0.2.0.QEJMIXM_ce099a7067_10.0.zip  
-  ROM_NAME: MIUI
-  ZIP_NAME: TEST
+  ROM_URL: https://download.c.realme.com/osupdate/RMX1993EX_11_OTA_1080_all_Gr2IwxeFFRaQ.ozip
+  ROM_NAME: ColorOS
+  ZIP_NAME: RealmeUI-V1.0
   erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
