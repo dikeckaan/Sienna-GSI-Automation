@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://get.mirror2.arrowos.net/download.php?token=U9g4kOHSJuWmj2eiZ7X80w5EyB3hrfKpAFolvbacQtTYnDPVxIqCMGdz6LR1&version=arrow-11.0&variant=official
-  ROM_NAME: Generic
-  ZIP_NAME: ArrpwOS-11
+  ROM_URL: https://download.c.realme.com/osupdate/RMX1993EX_11_OTA_1080_all_Gr2IwxeFFRaQ.ozip
+  ROM_NAME: ColorOS
+  ZIP_NAME: RealmeUI-V1.0
   erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
