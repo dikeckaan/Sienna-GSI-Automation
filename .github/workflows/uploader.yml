@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://ava2.androidfilehost.com/dl/teLx6luMWOJukrG09VvLsw/1603038397/4349826312261776452/ALEXISROM_1.3_S9.zip
+  ROM_URL: https://mva1.androidfilehost.com/dl/FRoCMJYLP-273as2IgvBqQ/1603047384/4349826312261805695/A207MUBU2BTD7_A207MOWO2BTD8_PEO.zip
   ROM_NAME: OneUI
-  ZIP_NAME: AlexisRom1.3
+  ZIP_NAME: OneUI
   erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
