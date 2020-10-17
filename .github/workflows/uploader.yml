@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://download2278.mediafire.com/lswqd1x7c3ig/u9kld56a9dwezib/ROMProvider.COM_L79031_ROW_OPEN_USER_Q00114.1a_Q_ROW_12.0.099_ST_200721_qpst.zip
-  ROM_NAME: ZUI
-  ZIP_NAME: LenovoLegionProZUI
+  ROM_URL: https://downloads.sourceforge.net/project/nusantaraproject/santoni/beta/Nusantara_v2.3-11-santoni-14102020-OFFICIAL-0327.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fnusantaraproject%2Ffiles%2Fsantoni%2Fbeta%2FNusantara_v2.3-11-santoni-14102020-OFFICIAL-0327.zip%2Fdownload&ts=1602896619
+  ROM_NAME: Generic
+  ZIP_NAME: NusantaraProject2.3
   erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
