@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MDI0NDk2NDIiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6ImEwMTVlNGQ1ZWE2Y2E3ODA1ZmQ3N2ZjZmU4NjVkNTE1ZDcwMzc2ZGM4MTg1NmVhZmJmYzJhYzZhNmNhOTRlYjg3YWIxOGU1NjE2N2Y3ZjdlOTZjOWMzMzQyYmM1ZWI1ZDE3YzI5ODk0N2RhYzI4MjlmMjU0ZjEzMDllYTBmZjA3IiwidCI6MTYwMjg5NzQxNywic3RmcCI6IjI4ZDBjMzFhYmI4NGI2ZDAwNWMzMTg4ODRmMjQ0ODUwIiwic3RpcCI6Ijk1LjEyLjEyMy4xMDcifQ.wFaGDpt_CYas5aFZLqE6-g3JNaEmKQJ3zTQNkq8xniQ/Corvus_v10.0-R-Alpha-TheStorm-raphael-11102020-Official-0742.zip
-  ROM_NAME: Generic
-  ZIP_NAME: CorvusOS-10.0
+  ROM_URL: http://download2278.mediafire.com/lswqd1x7c3ig/u9kld56a9dwezib/ROMProvider.COM_L79031_ROW_OPEN_USER_Q00114.1a_Q_ROW_12.0.099_ST_200721_qpst.zip
+  ROM_NAME: ZUI
+  ZIP_NAME: LenovoLegionProZUI
   erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
