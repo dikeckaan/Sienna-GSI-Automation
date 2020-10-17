@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://r5---sn-4g5ednly.gvt1.com/packages/data/ota-api/vsmart_casuarina_casuarinaopen/cbbeb0c9a3ac16338023f33e51e28456e7a65a49.zip?mh=7N&mip=95.12.123.107&mvi=5&pl=21&cm2rm=sn-u0g3uxax3-5tue76,sn-nv4ss76&req_id=d52df11f91ec7032&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mm=34&mn=sn-4g5ednly&ms=ltu&mt=1602934833&mv=m
-  ROM_NAME: Generic
-  ZIP_NAME: VOS-3.0
+  ROM_URL: https://downloads.sourceforge.net/project/tech-office/Redmi-4-Santoni/MIPhone-OS_1.2_HM4X_12-10.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Ftech-office%2Ffiles%2FRedmi-4-Santoni%2FMIPhone-OS_1.2_HM4X_12-10.zip%2Fdownload&ts=1602951445
+  ROM_NAME: MIUI
+  ZIP_NAME: MIPhone-OS_1.2
   erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
