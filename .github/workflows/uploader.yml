@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://cfhcable.dl.sourceforge.net/project/nusantaraproject//begonia/Nusantara_v1.1-begonia-14102020-OFFICIAL-2116.zip
+  ROM_URL: https://r5---sn-4g5ednly.gvt1.com/packages/data/ota-api/vsmart_casuarina_casuarinaopen/cbbeb0c9a3ac16338023f33e51e28456e7a65a49.zip?mh=7N&mip=95.12.123.107&mvi=5&pl=21&cm2rm=sn-u0g3uxax3-5tue76,sn-nv4ss76&req_id=d52df11f91ec7032&ipbypass=yes&redirect_counter=2&cms_redirect=yes&mm=34&mn=sn-4g5ednly&ms=ltu&mt=1602934833&mv=m
   ROM_NAME: Generic
-  ZIP_NAME: NusantaraProject1.1
+  ZIP_NAME: VOS-3.0
   erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
