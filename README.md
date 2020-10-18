@@ -1,3 +1,4 @@
+# THANKS KAAN DIKEC github.com/dikeckaan 
 THIS REPO BASED FROM https://github.com/Area69Lab/GSI-Automation (Special thanks for @JamieHoSzeYui , he give me idea and help me all thinks)
 # GSI-Automation
 
