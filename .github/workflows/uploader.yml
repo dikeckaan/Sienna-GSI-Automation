@@ -14,10 +14,11 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://netix.dl.sourceforge.net/project/pixelextended/Violet/PixelExtended_violet-11-20201014-1345-OFFICIAL.zip
-  ROM_NAME: Generic
-  ZIP_NAME: PixelExtended-11
-  erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
+
+  ROM_URL: https://bigota.d.miui.com/V12.0.2.0.QEJMIXM/miui_POCOF1Global_V12.0.2.0.QEJMIXM_ce099a7067_10.0.zip   
+  ROM_NAME: MIUI
+  ZIP_NAME: test-upload
+  erfanrepo: ${{ secrets.ERFANSOURCE }}
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
   password : ${{ secrets.UPLOADPASSWORD }}
