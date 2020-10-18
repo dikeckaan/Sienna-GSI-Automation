@@ -14,10 +14,11 @@ on:
     types: [started]
     
 env:
+
   ROM_URL: https://bigota.d.miui.com/V12.0.2.0.QEJMIXM/miui_POCOF1Global_V12.0.2.0.QEJMIXM_ce099a7067_10.0.zip   
   ROM_NAME: MIUI
   ZIP_NAME: test-upload
-  erfanrepo: ${{ secrets.ERFANSOURCE }}  
+  erfanrepo: ${{ secrets.ERFANSOURCE }}
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
   password : ${{ secrets.UPLOADPASSWORD }}
@@ -54,7 +55,7 @@ jobs:
               sudo chmod -R 777 ErfanGSIs/output
               cd ErfanGSIs/output
               zip -r $ZIP_NAME-GSI-Aonly.7z *-Aonly-*.img
-              curl -T $ZIP_NAME-GSI-Aonly.7z $uploadtype://$username:$password@$uploadto/          
+              curl -T $ZIP_NAME-GSI-Aonly.7z $uploadtype://$username:$password@$uploadto/       
        - name: Zip AB and upload 
          run: |
               cd ErfanGSIs/output
