@@ -15,7 +15,7 @@ on:
     
 env:
   ROM_URL: https://assorted.downloads.oppo.com/firmware/CPH2015/CPH2015PUEX_11_OTA_0231_all_jCHxG3KuWrOL.ozip 
-  ROM_NAME: MIUI
+  ROM_NAME: ColorOS
   ZIP_NAME: test-upload
   erfanrepo: ${{ secrets.ERFANSOURCE }}  
   TZ: Asia/Kolkata
