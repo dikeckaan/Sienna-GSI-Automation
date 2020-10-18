@@ -25,7 +25,7 @@ env:
   uploadtype: ftp
 jobs:
   build:
-    runs-on: ubuntu-bionic
+    runs-on: ubuntu.bionic
 
     steps:
        - name: Checkout
