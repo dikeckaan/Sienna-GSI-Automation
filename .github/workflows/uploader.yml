@@ -25,16 +25,12 @@ env:
   uploadtype: ftp
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu:18.04
 
     steps:
        - name: Checkout
          uses: actions/checkout@v2
-       - name: Clean Up
-         run: |
-           sudo rm -rf /usr/bin/python && ln -s /usr/bin/python3 /usr/bin/python && sudo rm -rf /usr/bin/pip && ln -s /usr/bin/pip3 /usr/bin/pip 
-       
-           
+         
        - name: Initializing environment
          run: |
             sudo -E apt-get -qq update
