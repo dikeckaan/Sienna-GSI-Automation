@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://downloads.sourceforge.net/project/pixelextended/Violet/PixelExtended_violet-11-20201014-1345-OFFICIAL.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fpixelextended%2Ffiles%2FViolet%2FPixelExtended_violet-11-20201014-1345-OFFICIAL.zip%2Fdownload&ts=1602968843
+  ROM_URL: https://netix.dl.sourceforge.net/project/pixelextended/Violet/PixelExtended_violet-11-20201014-1345-OFFICIAL.zip
   ROM_NAME: Generic
   ZIP_NAME: PixelExtended-11
   erfanrepo: https://github.com/Treble-Experience/ErfanGSIs-VelanGSIs.git ErfanGSIs
