@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://assorted.downloads.oppo.com/firmware/CPH2015/CPH2015PUEX_11_OTA_0231_all_jCHxG3KuWrOL.ozip 
-  ROM_NAME: ColorOS
-  ZIP_NAME: test-upload
+  ROM_URL: https://bigota.d.miui.com/V12.0.1.0.QFGMIXM/miui_LAVENDERGlobal_V12.0.1.0.QFGMIXM_c3fa7eb012_10.0.zip 
+  ROM_NAME: MIUI
+  ZIP_NAME: dsc-test
   erfanrepo: ${{ secrets.ERFANSOURCE }}  
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
