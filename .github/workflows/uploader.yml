@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/V12.0.1.0.QFGMIXM/miui_LAVENDERGlobal_V12.0.1.0.QFGMIXM_c3fa7eb012_10.0.zip 
-  ROM_NAME: MIUI
-  ZIP_NAME: dsc-test
+  ROM_URL: https://assorted.downloads.oppo.com/firmware/CPH1931/CPH1931EX_11_OTA_1790_all_gwOo5rqbYwLw.ozip 
+  ROM_NAME: ColorOS
+  ZIP_NAME: Karamurat-benim-oppo-a5-2020
   erfanrepo: ${{ secrets.ERFANSOURCE }}  
   TZ: Asia/Kolkata
   username : ${{ secrets.UPLOADUSERNAME }}
@@ -37,12 +37,12 @@ jobs:
             sudo -E apt-get -qq install git openjdk-8-jdk wget
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules $erfanrepo
+         run: git clone --recurse-submodules $erfanrepo 
        
        - name: Setting up ErfanGSI requirements
          run: |
               sudo chmod -R 777 ErfanGSIs
-              cd ErfanGSIs
+              cd ErfanGSIs && cp -r roms/9/ColorOS roms/11/
               sudo bash setup.sh
        
        - name: Download Stock Rom & Generate GSI 
